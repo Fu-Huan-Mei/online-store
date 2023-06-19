@@ -1,0 +1,1643 @@
+/*设置网页头部*/
+.header{
+    width: 1903px;
+    height:784px;
+    background-color: #fff;
+    margin-bottom: 26px;
+}
+/*头部导航条外部容器*/
+.top-nav{
+    width:1903px;
+    height:40px;
+    color:#B0B0B0;
+    font-size: 12px;
+    background-color: #333;
+    position: relative;
+}
+/*头部导航条内部容器*/
+.inner-nav{
+    width:1226px;
+    height:40px;
+    margin:0 auto;
+}
+/*头部导航条内部容器a的公共样式*/
+.inner-nav a:hover:not(.car){
+    color:#fff;
+}
+/*头部导航条内部容器line的公共样式*/
+.inner-nav .line{
+    color:#424242;
+}
+/*头部左侧导航条*/
+.left-nav{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:794.094px;
+    height:40px;
+}
+/*头部左侧导航条："下载app"*/
+.download-app{
+    width:44.03px;
+    height:40px;
+    line-height:40px;
+    cursor: pointer;
+    position: relative;
+}
+.download-app a{
+    display:block;
+    width:44.03px;
+    height:40px;
+}
+.download-app:hover{
+    color:#fff;
+}
+/*头部左侧导航条："下载app"下的下拉层容器*/
+.app-hide{
+    width: 124px;
+    height:0;
+    position: absolute;
+    top:40.02px;
+    left:-40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    transition: height .3s;
+    background-color: #fff;
+    z-index:99;
+}
+/*头部左侧导航条："下载app"下的小三角（新技能：多练习）*/
+.download-app:hover .app-hide::before{
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    top:-8px;
+    left:50%;
+    margin-left:-8px;
+    border:8px solid transparent;
+    border-top:none;
+    border-bottom-color: #fff;
+    z-index:99;
+}
+/*头部左侧导航条："下载app"下的下拉框*/
+.inner{
+    text-align: center;
+    width: 124px;
+    height:100%; 
+    /*注意:当height为0时,该元素中的内容溢出,所以要隐藏溢出内容*/
+    overflow: hidden;
+}
+/*头部左侧导航条："下载app"下的下拉框的隐藏*/
+.download-app:hover .app-hide{
+    height:148px;
+}
+/*头部左侧导航条："下载app"下的下拉框中的"图片"*/
+.inner img{
+    height:90px;
+    width: 90px;
+    margin-top: 18px;
+}
+/*头部左侧导航条："下载app"下的下拉框中的"文字"*/
+.inner h2{
+    font-size: 14px;
+    color: #333;
+}
+
+/*头部右侧导航条*/
+.right-nav{
+    float:right;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:122.46px;
+    height:40px;
+}
+/*头部"购物车"导航条外层容器*/
+.shop-nav{
+    float: right;
+    width:120px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 25px;
+    background-color: #424242; 
+    position: relative;
+}
+/*头部"购物车"导航条*/
+.shop-cart{
+    position: relative;
+    width:120px;
+    height:40px;
+}
+/*头部"购物车"导航条的hover状态*/
+.shop-nav:hover .shop-cart{
+    background-color: #fff;
+    color:#ff6700;
+    z-index: 100;
+}
+/*头部"购物车"导航条中的小图标*/
+.shop-cart i{
+   font-size:14px;
+   width:20px;
+   height:20px;
+}
+/*头部"购物车"导航条下的下拉框*/
+.shop-hide{
+    width: 316px;
+    height:0px;
+    overflow: hidden;
+    line-height: 100px;
+    position: absolute;
+    left:-196px;
+    color: #333;
+    background-color:#fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    z-index: 99;
+    transition: height .3s;
+}
+/*隐藏头部"购物车"导航条下的下拉框*/
+.shop-nav:hover .shop-hide{
+    height:100px;
+}
+/*头部菜单栏外部容器*/
+.top-menu{
+    width:1903px;
+    height:100px;
+}
+/*头部菜单栏内部容器*/
+.inner-menu{
+    width:1226px;
+    height:100px;
+    margin:0 auto;
+}
+/*头部菜单栏:左侧菜单栏*/
+.left-menu{
+    float: left;
+    width:56px;
+    height:100px;
+    line-height: 100px;
+    margin-right:37px;
+}
+/*头部左侧菜单栏：logo*/
+.left-menu img{
+    width:56px;
+    height:56px;
+}
+/*头部左侧菜单栏：logo点击后的放大效果*/
+.left-menu img:active{
+    transform:translate(0,0) scale(1.1) rotate(0deg);
+}
+/*头部菜单栏:中间菜单栏*/
+.middle-menu{
+    float: left;
+    height:88px;
+    width:770px;
+    padding-top:12px;
+    font-size: 16px;
+    color:#333;
+    background-color:#fff;
+}
+/*头部菜单栏:中间菜单栏每一栏的样式*/
+.all-goods-wrap{
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    width:127px;
+    height:88px;
+    padding:26px 0 38px;
+    margin-right:15px;
+}
+.all-goods{
+    visibility: hidden;
+}
+/*all-goods下的左侧菜单列表*/
+.menu-list{
+    position: absolute;
+    top:88px;
+    left:-93px;
+    width:234px;
+    height:420px;
+    padding:20px 0;
+    font-size: 14px;
+    color: #fff;
+    background-color:rgba(105,101,101,.6);
+}
+/*all-goods下的左侧菜单列表的每一行*/
+.menu-list div{
+    position: relative;
+    box-sizing: border-box;
+    width:234px;
+    height:42px;
+    line-height: 42px;
+    padding-left:30px;
+}
+.menu-list .menu:hover{
+    background-color: #ff6700;
+}
+.menu-list div i{
+    position: absolute;
+    top:13px;
+    right:20px;
+    font-size: 16px;
+}
+.xm-phones-wrap,
+.rm-phones-wrap,
+.TV-wrap,
+.notebooks-wrap,
+.table-computer-wrap,
+.home-appliances-wrap,
+.router-wrap,
+.serve-wrap,
+.community-wrap{
+    float: left;
+    box-sizing: border-box;
+    height:88px;
+    padding:26px 10px 38px;
+}
+.xm-phones-wrap{
+    width:100.91px;
+}
+.rm-phones-wrap{
+    width:98.33px;
+}
+.TV-wrap{
+    width:52px;
+}
+.notebooks-wrap{
+    width:68px;
+}
+.table-computer-wrap{
+    width:52px;
+}
+.home-appliances-wrap{
+    width:52px;
+}
+.router-wrap{
+    width:68px;
+}
+.serve-wrap{
+    width:84px;
+}
+.community-wrap{
+    width:52px;
+}
+/*设置"Xiaomi手机"下拉层*/
+/*设置下拉框*/
+.xm-phones-hide{
+    position: absolute;
+    left:0px;
+    top:140px;
+    width:1903px;
+    height:0px;
+    overflow: hidden;
+    box-shadow: 0 15px 10px -15px rgba(0, 0, 0, .3);
+    z-index: 99;
+    background-color: #fff;
+    transition: height .3s;
+}
+/*设置下拉列表的隐藏*/
+.xm-phones-wrap:hover .xm-phones-hide{
+    height:221px;
+    border-top:1px solid #e0e0e0;
+}
+.all-goods>a:hover,
+.xm-phones>a:hover,
+.rm-phones>a:hover,
+.TV>a:hover,
+.notebooks>a:hover,
+.table-computer>a:hover,
+.router>a:hover,
+.serve>a:hover,
+.community>a:hover{
+    color:#ff6700;
+}
+/*设置下拉列表的列表项开启定位*/
+.list-hide{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: absolute;
+    left:404px;
+    top:0;
+    width:1226px;
+    height:221px;
+    background-color: #fff;
+}
+/*设置下拉列表的列表项的每一项*/
+.list-hide li{
+    float: left;
+    width:120px;
+}
+.list-hide img{
+    width:120px;
+    height:110px;
+    padding-right:40px;
+    border-right:1px solid #e0e0e0;
+}
+.list-hide .last{
+    border-right:none;
+}
+.list-hide h2,
+.list-hide h3{
+    font-size: 12px;
+    text-align: center;
+}
+.list-hide h2{
+    margin-top:16px
+}
+.list-hide h3{
+    color: #ff6700;
+}
+/*为下拉框的父元素开起*/
+.menu-list .menu{
+    position: relative;
+}
+/*all-goods下的左侧菜单列表的每一行下的下拉框*/
+/*4个列表项*/
+.phones .phones-hide,
+.TVs .TVs-hide,
+.appliances .appliances-hide,
+.computers .computers-hide,
+.clothes .clothes-hide,
+.voice .voice-hide{
+    box-sizing: border-box;
+    width:992px;
+    height: 460px;
+    padding-left:30px;
+    border-top:1px solid transparent;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, .2);
+    display: none;
+    background-color: #fff;
+    z-index: 99;
+    position: absolute;
+    top: -20px;
+    left: 234px;
+}
+/*3个列表项*/
+.health .health-hide,
+.lives .lives-hide{
+    box-sizing: border-box;
+    width:752px;
+    height:460px;
+    padding-left:30px;
+    border-top:1px solid transparent;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, .2);
+    display: none;
+    background-color: #fff;
+    z-index: 99;
+    position: absolute;
+    top: -20px;
+    left: 234px;
+}
+/*2个列表项*/
+.AI .AI-hide,
+.power .power-hide{
+    box-sizing: border-box;
+    width:512px;
+    height:460px;
+    padding-left:30px;
+    border-top:1px solid transparent;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, .2);
+    display: none;
+    background-color: #fff;
+    z-index: 99;
+    position: absolute;
+    top: -20px;
+    left: 234px;
+}
+/*单独设置"下拉框位置"样式*/
+.TVs .TVs-hide{
+    position: absolute;
+    top:-62px;
+}
+.appliances .appliances-hide{
+    position: absolute;
+    top:-104px;
+}
+.computers .computers-hide{
+    position: absolute;
+    top:-146px;
+}
+.clothes .clothes-hide{
+    position: absolute;
+    top:-188px;
+}
+.voice .voice-hide{
+    position: absolute;
+    top:-230px;
+}
+.health .health-hide{
+    position: absolute;
+    top:-272px;
+}
+.lives .lives-hide{
+    position: absolute;
+    top:-314px;
+}
+.AI .AI-hide{
+    position: absolute;
+    top:-356px;
+}
+.power .power-hide{
+    position: absolute;
+    top:-398px;
+}
+/*单独设置"省略号"样式*/
+.appliances-hide .ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*下拉框出现*/
+.phones:hover .phones-hide,
+.TVs:hover .TVs-hide,
+.appliances:hover .appliances-hide,
+.computers:hover .computers-hide,
+.clothes:hover .clothes-hide,
+.voice:hover .voice-hide,
+.health:hover .health-hide,
+.lives:hover .lives-hide,
+.AI:hover .AI-hide,
+.power:hover .power-hide{
+    display: block;
+    border-top-color:#e0e0e0;
+}
+/*隐藏栏中的列表1*/
+.list-1,
+.list-2,
+.list-3,
+.list-4 {
+    float: left;
+    width: 240px;
+    height: 460px;
+    color: #333;
+}
+
+/*隐藏栏列表1每一行*/
+.list-1 li,
+.list-2 li,
+.list-3 li,
+.list-4 li {
+    width: 240px;
+    height: 76.667px;
+    line-height: 76.667px;
+}
+.list-1 li:hover,
+.list-2 li:hover,
+.list-3 li:hover,
+.list-4 li:hover {
+    color: #ff6700;
+}
+.list-1 img,
+.list-2 img,
+.list-3 img,
+.list-4 img {
+    width: 40px;
+    height: 40px;
+}
+
+/*头部菜单栏:右侧菜单栏*/
+.right-menu{
+    position: relative;
+    float: right;
+    width:297px;
+    height:50px;
+}
+/*鼠标移入时边框变颜色*/
+.right-menu:hover input,
+.right-menu:hover button{
+    border-color:#c7c7c7;
+}
+/*头部右侧菜单栏：输入框*/
+.input{
+    float:left;
+    box-sizing: border-box;
+    width:245px;
+    height:50px;
+    margin-top:25px;
+    padding:0 10px;
+    border:1px solid #e0e0e0;
+    border-right:none;
+    outline: none;
+    background-color: #fff;
+}
+/*鼠标聚焦时边框变橙色*/
+.right-menu .input:focus,
+.right-menu .input:focus~.search button{
+    border-color:#ff6700;
+}
+/*头部右侧菜单栏：搜素框*/
+.search{
+    width:297px;
+    height:100px;
+}
+.search button{
+    display: block;
+    box-sizing: border-box;
+    width:52px;
+    height:50px;
+    margin-top:25px;
+    padding:0 6px;
+    border:1px solid #e0e0e0;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+/*头部右侧菜单栏：搜素框的鼠标移入状态*/
+.search:hover button,
+.search:hover button>i{
+    background-color: #ff6700;
+    border-color:#ff6700;
+    color:#fff;
+}
+/*头部右侧菜单栏：小图标*/
+.search button i{
+    font-size: 18px;
+    color:#616161;
+}
+/*设置输入框下的下拉框*/
+.input-hide{
+    position: absolute;
+    top:75px;
+    left:0;
+    box-sizing: border-box;
+    width: 246px;
+    height: 242px;
+    border: 1px solid #ff6700;
+    border-top: none;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    font-size: 12px;
+    z-index: 999;
+}
+/*设置输入框下的下拉框隐藏状态:找到它们之间的关系（新技能：多练习）*/
+.right-menu .input:focus~.input-hide{
+    display:flex;
+}
+/*设置输入框下的下拉框的每一行*/
+.input-hide li{
+    box-sizing: border-box;
+    width:246px;
+    height:30.25px;
+    padding-left:15px;
+    line-height: 30.25px;
+}
+/*设置输入框下的下拉框每一行的鼠标移入状态*/
+.input-hide li:hover{
+    width:244px;
+    background-color: rgba(245,245,245,.5);
+}
+/*设置网页顶部轮播图*/
+.top-img{
+    position: relative;
+    float: left;
+    left:572.5px;
+    width:992px;
+    height:460px;
+}
+/*设置网页顶部轮播图的图片*/
+.imgs{
+    position: absolute;
+    width:992px;
+    height:460px;
+}
+.imgs img{
+    position: absolute;
+    top:0;
+    width:992px;
+    height:460px;
+}
+/*设置网页顶部轮播图的按钮*/
+/*设置前翻页*/
+.prev{
+    position: absolute;
+    top:50%;
+    margin-top: -32.5px;
+    left:0;
+    width:41px;
+    height:69px;
+    background-image: url("../picture/header/7.png");
+    background-position: 82px 0px;
+}
+.prev:hover{
+    background-position:0px 0px;
+}
+/*设置后翻页*/
+.next{
+    position: absolute;
+    top:50%;
+    margin-top: -32.5px;
+    left:951px;
+    width:41px;
+    height:69px;
+    background-image: url("../picture/header/7.png");
+    background-position:-123px 0;
+}
+.next:hover{
+    background-position:123px 0px;
+}
+/*设置小圆点(多练习）*/
+.point{
+    display: flex;
+    justify-content: end;
+    position:absolute;
+    bottom:20px;
+    right:30px;
+    width:400px;
+    height:21px;
+}
+.point a{
+    display: inline-block;
+    width:6px;
+    height:6px;
+    border:2px solid hsla(0,0%,100%,.3);
+    margin:0 4px;
+    border-radius: 50%;
+    background-color:rgba(0,0,0,.4);
+}
+.point a:hover,
+.point a.current-point{
+    background-color: #fff;
+    /*注意：裁剪背景范围只在内容区；否则小圆点的边框也会被白色的背景覆盖！！*/
+    background-clip: content-box;
+    border-color: rgba(0,0,0,.4);
+}
+/*网页其他服务*/
+.bottom-info{
+    position: absolute;
+    top:460px;
+    left:-234px;
+    width:1226px;
+    height:170px;
+    margin-top:14px;
+}
+/*网页轮播图下的左侧信息*/
+.left-info{
+    float: left;
+    box-sizing: border-box;
+    width:234px;
+    height:170px;
+    background-color:#5f5750;
+    position: relative;
+}
+/*设置左侧信息中的每一个列表项样式*/
+.left-info li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:left;
+    box-sizing: border-box;
+    width:76px;
+    height:82px;
+    font-size: 12px;
+    text-align: center;
+    padding:0 3px;
+    padding-top:18px;
+    color:#CFCCCA;
+    opacity:.8;
+}
+/*设置左侧信息中的每一个列表项样式的鼠标移入状态*/
+.left-info li:hover a{
+    color:#fff;
+    opacity: 1;
+}
+/*设置左侧信息中的每一张小图片样式*/
+.left-info img{
+    width:24px;
+    height:24px;
+    margin:0 23px 4px;
+}
+/*设置竖线*/
+.left-info li:before{
+    content:'';
+    width:64px ;
+    height:1px;
+    background-color: #665E57;
+}
+.l1:before{
+    position: absolute;
+    top:3px;
+    left:6px;
+}
+.l2:before{
+    position: absolute;
+    top:3px;
+    left:82px;
+}
+.l3:before{
+    position: absolute;
+    top:3px;
+    left:158px;
+}
+.l4:before{
+    position: absolute;
+    bottom:85px;
+    left:6px;
+}
+.l5:before{
+    position: absolute;
+    bottom:85px;
+    left:82px;
+}
+.l6:before{
+    position: absolute;
+    bottom:85px;
+    left:158px;
+}
+.left-info li:after{
+    content:'';
+    width:1px ;
+    height:70px;
+    background-color: #665E57;
+}
+.l1:after{
+    position: absolute;
+    top:9px;
+    left:3px;
+}
+.l2:after{
+    position: absolute;
+    top:9px;
+    left:76px;
+}
+.l3:after{
+    position: absolute;
+    top:9px;
+    left:152px;
+}
+.l4:after{
+    position: absolute;
+    bottom:9px;
+    left:3px;
+}
+.l5:after{
+    position: absolute;
+    bottom:9px;
+    left:76px;
+}
+.l6:after{
+    position: absolute;
+    bottom:9px;
+    left:152px;
+}
+/*设置左侧信息的外层容器*/
+.right-info{
+    position: absolute;
+    left:234px;
+    width:992px;
+    height:170px;
+    padding-left:14px;
+    background-color: #fff;
+}
+/*设置左侧信息的图片*/
+.right-info img{
+    float: left;
+    width:316.6px;
+    height:170px;
+    margin-right:14px;
+    transition: all 0.5s;
+}
+.right-info img:hover{
+    box-shadow:3px 3px 30px 10px rgba(0, 0, 0, .05); 
+}
+/*网页主体*/
+.main{
+    box-sizing: border-box;
+    width:1903px;
+    height:5887.52px;
+    padding:4px 0 12px;
+    background-color: #F5F5F5;
+}
+/*网页主体内部容器*/
+.main-inner{
+    position: relative;
+    width:1903px;
+    height:5871.540px;
+}
+/*网页主体内部内容容器*/
+.main-content{
+    width:1226px;
+    height:5871.540px;
+    margin:0 auto;
+    margin-top:22px;
+}
+/*网页主体内部1:main-1 仅是一张图片*/
+.main-1{
+    width:1226px;
+    height:120px;
+    margin-bottom:22px;
+}
+/*网页主体内部1:main-2*/
+/*双数是文字部分*/
+.main-2,
+.main-4,
+.main-6,
+.main-8,
+.main-10,
+.main-12,
+.main-14,
+.main-16{
+    width:1226px;
+    height:58px;
+    line-height: 58px;
+}
+/*左侧字体样式*/
+.main-2 .s1,
+.main-4 .s1,
+.main-6 .s1,
+.main-8 .s1,
+.main-10 .s1,
+.main-12 .s1,
+.main-14 .s1,
+.main-16 .s1{
+    float: left;
+    font-size: 22px;
+    color:#333;
+}
+/*右侧字体外部容器公共样式*/
+.main-2 .a,
+.main-4 .a,
+.main-6 .a,
+.main-8 .a,
+.main-10 .a,
+.main-12 .a,
+.main-14 .a,
+.main-16 .a{
+    font-size: 16px;
+    color:#424242;
+}
+/*右侧字体外部容器单独样式*/
+.main-2 .a{
+    float: right;
+    width:91.99px;
+    height:58px;
+}
+.main-4 .a,
+.main-6 .a{
+    float: right;
+    width:124.01px;
+    height:41.8px;
+}
+.main-6 .a{
+    display: flex;
+    justify-content: end;
+}
+.main-8 .a{
+    float: right;
+    width:126.01px;
+    height:41.8px;
+}
+.main-10 .a{
+    float: right;
+    width:280.1px;
+    height:41.810px;
+}
+.main-12 .a{
+    float: right;
+    width:296.04px;
+    height:41.810px;
+}
+.main-14 .a{
+    float: right;
+    width:360.03px;
+    height:41.810px;
+}
+.main-16 .a{
+    float: right;
+    width:412.47px;
+    height:41.810px;
+}
+/*右侧容器中的字体公共样式*/
+.main-4 .s2,
+.main-6 .s2,
+.main-8 .s2,
+.main-10 .s2,
+.main-12 .s2,
+.main-14 .s2,
+.main-16 .s2{
+    color:#ff6700;
+    border-bottom: 2px solid #ff6700;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+/*右侧容器中的字体单独设置样式*/
+.main-4 .s2{
+    position: relative;
+    left:30px;
+}
+.main-6 .s2{
+    position: relative;
+    left:0px;
+}
+.main-4 .s3{
+    border-bottom: 2px solid rgba(0,0,0,0);
+}
+.main-4 .s3,
+.main-8 .s3{
+    float: right;
+}
+.main-10 .s2,.s3,.s4,.s5,
+.main-12 .s2,.s3,.s4,.s5,
+.main-14 .s2,.s3,.s4,.s5,
+.main-16 .s2,.s3,.s4,.s5{
+    margin-left:25px;
+}
+/*右侧字体样式鼠标移入状态*/
+.main-2 .a:hover span,
+.main-2 .a:hover i{
+    color:#ff6700;
+}
+.main-2 i{
+    margin-left:8px;
+    color:#B0B0B0;
+    font-size:20px;
+}
+/*单数是图片部分*/
+/*设置"money"删除线*/
+.main-content h4 .line-through{
+    margin-left:7px;
+    font-size: 14px;
+    color:#B0B0B0;
+    text-decoration: line-through;
+}
+/*设置省略号*/
+.main-content li .ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*图片呈现部分：样式1*/
+.main-3{
+    width:1226px;
+    height:613.991px;
+    display: grid;
+    grid-template-rows:repeat(2,300px);
+    grid-template-columns: repeat(5,233.991px);
+    grid-gap:14px;
+    margin-bottom:22px;
+}
+.main-3 .p1{
+    grid-row:1/3;
+    background-color: #fff;
+    padding:20px 0;
+}
+.main-3 li{
+    background-color: #fff;
+    transition: all 0.5s;
+    padding:20px 0;
+}
+.main-3 li:hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+
+.main-3 .p1 img{
+    width:233.991px;
+    height:593.991px;
+}
+.main-3 li:not(.p1) img{
+    width:160px;
+    height:160px;
+    margin:0px 37.0028px 18px 36.9886px;
+}
+.main-3 h2{
+    width:213.991px;
+    height:21.01px;
+    font-size: 14px;
+    color:#333;
+    margin:0 10px 2px;
+    text-align: center;
+}
+.main-3 h3{
+    width:213.991px;
+    height:18px;
+    font-size: 12px;
+    color:#B0B0B0;
+    margin:0 10px 10px;
+    text-align: center;
+}
+.main-3 h4{
+    width:213.991px;
+    height:21.01px;
+    font-size: 14px;
+    color:#ff6700;
+    margin:0 10px 14px;
+    text-align: center;
+}
+/*图片呈现部分：样式2*/
+.main-5,
+.main-7{
+    width:1226px;
+    height:613.991px;
+    display: grid;
+    grid-template-rows:repeat(2,300px);
+    grid-template-columns: repeat(5,233.991px);
+    grid-gap:14px;
+    margin-bottom:22px;
+}
+.main-5 .p1,
+.main-7 .p1{
+    grid-row:1/3;
+    background-color: #fff;
+    padding:20px 0;
+}
+.main-5 li:not(.p9),
+.main-7 li:not(.p9){
+    background-color: #fff;
+    transition: all 0.5s;
+    padding:20px 0;
+}
+.main-5 li:not(.p9):hover,
+.main-7 li:not(.p9):hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+.main-5 .p1 img,
+.main-7 .p1 img{
+    width:233.991px;
+    height:593.991px;
+}
+.main-5 li:not(.p1,.p9) img,
+.main-7 li:not(.p1,.p9) img{
+    width:160px;
+    height:160px;
+    margin:0px 37.0028px 18px 36.9886px;
+}
+.main-5 h2,
+.main-7 h2{
+    width:213.991px;
+    height:21.01px;
+    font-size: 14px;
+    color:#333;
+    margin:0 10px 2px;
+    text-align: center;
+}
+.main-5 h3,
+.main-7 h3{
+    width:213.991px;
+    height:18px;
+    font-size: 12px;
+    color:#B0B0B0;
+    margin:0 10px 10px;
+    text-align: center;
+}
+.main-5 h4:not(.p9 h4),
+.main-7 h4:not(.p9 h4){
+    width:213.991px;
+    height:21.01px;
+    font-size: 14px;
+    color:#ff6700;
+    margin:0 10px 14px;
+    text-align: center;
+}
+/*设置最后一项列表*/
+.main-5 .p9,
+.main-7 .p9{
+    width:233.991px;
+    height:300px;
+    background-color: inherit;
+}
+/*设置最后一项列表得上下两部分*/
+.main-5 .p9 .up,
+.main-5 .p9 .down,
+.main-7 .p9 .up,
+.main-7 .p9 .down{
+    position: relative;
+    box-sizing: border-box;
+    width:233.991px;
+    height:143px;
+    padding-top:50px;
+    background-color: #fff;
+    transition: all 0.5s;
+    
+}
+.main-5 .p9 .up:hover,
+.main-5 .p9 .down:hover,
+.main-7 .p9 .up:hover,
+.main-7 .p9 .down:hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+/*设置最后一项列表上部分*/
+.main-5 .p9 .up,
+.main-7 .p9 .up{
+    margin-bottom:14px;
+}
+.main-5 .up .p,
+.main-7 .up .p{
+    position: absolute;
+    top:40px;
+    left:30px;
+    width:93.992px;
+    height:63.026px;
+    color:#333;
+    font-size: 14px;
+}
+.main-5 .up h4,
+.main-7 .up h4{
+    position:absolute;
+    bottom:15px;
+    left: 30px;
+    font-size: 14px;
+    color:#ff6700;
+    width:93.992px;
+    height:21.009px;
+}
+.main-7 .up h4{
+    position:absolute;
+    bottom:56px;
+    left: 30px;
+}
+.main-5 .up img,
+.main-7 .up img{
+    position: absolute;
+    right:20px;
+    top:30px;
+    width:80px;
+    height:80px;
+}
+/*设置最后一项列表下部分*/
+.main-5 .down .down-1,
+.main-7 .down .down-1{
+    position: absolute;
+    bottom:66px;
+    left:30px;
+    color:#333;
+    font-size: 18px;
+}
+.main-5 .down .down-2,
+.main-7 .down .down-2{
+    position: absolute;
+    bottom:48px;
+    left:30px;
+    color:#757575;
+    font-size: 12px;
+}
+/*利用伪类添加图标字体:<i class="fa-solid fa-angle-right"></i>*/
+/*伪类的content信息可以去CSS查询*/
+/* .down a::after{
+    content:"";
+    font-family: 'Font Awesome 6 Free'; 
+    font-weight: 900;
+} */
+.main-5 .down i,
+.main-7 .down i{
+    position: absolute;
+    top:50px;
+    right:40px;
+    font-size: 48px;
+    color:#ff6700;
+}
+/*图片呈现部分：样式3*/
+.main-9,
+.main-11,
+.main-13,
+.main-15,
+.main-17{
+    width:1226px;
+    height:613.991px;
+    display: grid;
+    grid-template-rows:repeat(2,300px);
+    grid-template-columns: repeat(5,233.991px);
+    grid-gap:14px;
+    margin-bottom:22px;
+    background-color: inherit;
+}
+.main-9 li:not(.p1,.p6,.p10),
+.main-11 li:not(.p1,.p6,.p10),
+.main-13 li:not(.p1,.p6,.p10),
+.main-15 li:not(.p1,.p6,.p10),
+.main-17 li:not(.p1,.p6,.p10){
+    background-color: #fff;
+    transition: all 0.5s;
+    padding:20px 0;
+} 
+.main-9 .p1,.p6,.p10,
+.main-11 .p1,.p6,.p10,
+.main-13 .p1,.p6,.p10,
+.main-15 .p1,.p6,.p10,
+.main-17 .p1,.p6,.p10{
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.main-9 li:not(.p10):hover,
+.main-11 li:not(.p10):hover,
+.main-13 li:not(.p10):hover,
+.main-15 li:not(.p10):hover,
+.main-17 li:not(.p10):hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+} 
+.main-9 li:not(.p1,.p6,.p10) img,
+.main-11 li:not(.p1,.p6,.p10) img,
+.main-13 li:not(.p1,.p6,.p10) img,
+.main-15 li:not(.p1,.p6,.p10) img,
+.main-17 li:not(.p1,.p6,.p10) img{
+    width:160px;
+    height:160px;
+    margin:0px 37.0028px 18px 36.9886px;
+}
+.main-9 .p1 img,
+.main-9 .p6 img,
+.main-11 .p1 img,
+.main-11 .p6 img,
+.main-13 .p1 img,
+.main-13 .p6 img,
+.main-15 .p1 img,
+.main-15 .p6 img,
+.main-17 .p1 img,
+.main-17 .p6 img{
+    width:233.991px;
+    height:300px;
+}
+.main-9 h2,
+.main-11 h2,
+.main-13 h2,
+.main-15 h2,
+.main-17 h2{
+    width:213.991px;
+    height:21.01px;
+    font-size: 14px;
+    color:#333;
+    margin:0 10px 2px;
+    text-align: center;
+} 
+.main-9 h3,
+.main-11 h3,
+.main-13 h3,
+.main-15 h3,
+.main-17 h3{
+    width:213.991px;
+    height:18px;
+    font-size: 12px;
+    color:#B0B0B0;
+    margin:0 10px 10px;
+    text-align: center;
+} 
+.main-9  h4:not(.p10 h4),
+.main-11 h4:not(.p10 h4),
+.main-13 h4:not(.p10 h4),
+.main-15 h4:not(.p10 h4),
+.main-17 h4:not(.p10 h4){
+    width:213.991px;
+    height:21.01px;
+    font-size: 14px;
+    color:#ff6700;
+    margin:0 10px 14px;
+    text-align: center;
+} 
+.main-9 .p10,
+.main-11 .p10,
+.main-13 .p10,
+.main-15 .p10,
+.main-17 .p10{
+    width:233.991px;
+    height:300px;
+    background-color: inherit;
+}
+.main-9 .p10 .up,
+.main-9 .p10 .down,
+.main-11 .p10 .up,
+.main-11 .p10 .down,
+.main-13 .p10 .up,
+.main-13 .p10 .down,
+.main-15 .p10 .up,
+.main-15 .p10 .down,
+.main-17 .p10 .up,
+.main-17 .p10 .down{
+    position: relative;
+    box-sizing: border-box;
+    width:233.991px;
+    height:143px;
+    padding-top:50px;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.main-9 .p10 .up:hover,
+.main-9 .p10 .down:hover,
+.main-11 .p10 .up:hover,
+.main-11 .p10 .down:hover,
+.main-13 .p10 .up:hover,
+.main-13 .p10 .down:hover,
+.main-15 .p10 .up:hover,
+.main-15 .p10 .down:hover,
+.main-17 .p10 .up:hover,
+.main-17 .p10 .down:hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+} 
+/*设置最后一项列表上部分*/
+.main-9 .p10 .up,
+.main-11 .p10 .up,
+.main-13 .p10 .up,
+.main-15 .p10 .up,
+.main-17 .p10 .up{
+    margin-bottom:14px;
+}
+.main-9 .up .p,
+.main-11 .up .p,
+.main-13 .up .p,
+.main-15 .up .p,
+.main-17 .up .p{
+    position: absolute;
+    top:40px;
+    left:30px;
+    width:93.992px;
+    height:63.026px;
+    color:#333;
+    font-size: 14px;
+}
+.main-9 .up h4,
+.main-11 .up h4,
+.main-13 .up h4,
+.main-15 .up h4,
+.main-17 .up h4{
+    position:absolute;
+    bottom:35px;
+    left: 30px;
+    font-size: 14px;
+    color:#ff6700;
+    width:93.992px;
+    height:21.009px;
+}
+.main-15 .up h4{
+    bottom:55px;
+}
+.main-9 .up img,
+.main-11 .up img,
+.main-13 .up img,
+.main-15 .up img,
+.main-17 .up img{
+    position: absolute;
+    right:20px;
+    top:30px;
+    width:80px;
+    height:80px;
+}
+/*设置最后一项列表下部分*/
+.main-9 .down .down-1,
+.main-11 .down .down-1,
+.main-13 .down .down-1,
+.main-15 .down .down-1,
+.main-17 .down .down-1{
+    position: absolute;
+    bottom:66px;
+    left:30px;
+    color:#333;
+    font-size: 18px;
+}
+.main-9 .down .down-2,
+.main-11 .down .down-2,
+.main-13 .down .down-2,
+.main-15 .down .down-2,
+.main-17 .down .down-2{
+    position: absolute;
+    bottom:48px;
+    left:30px;
+    color:#757575;
+    font-size: 12px;
+} 
+/*利用伪类添加图标字体:<i class="fa-solid fa-angle-right"></i>*/
+/*伪类的content信息可以去CSS查询*/
+/* .down a::after{
+    content:"";
+    font-family: 'Font Awesome 6 Free'; 
+    font-weight: 900;
+} */
+.main-9 .down i,
+.main-11 .down i,
+.main-13 .down i,
+.main-15 .down i,
+.main-17 .down i{
+    position: absolute;
+    top:50px;
+    right:40px;
+    font-size: 48px;
+    color:#ff6700;
+}
+/*网页主体内容：最后一部分*/
+.main-18 img{
+    position: absolute;
+    bottom:40px;
+    width:1226px;
+    height:120px;
+}
+/*网页底部样式*/
+.footer{
+    width:1903px;
+    height:472.5px;
+    background-color: #fff;
+}
+/*网页底部样式：服务区*/
+.footer-service{
+    box-sizing: border-box;
+    width:1226px;
+    height:80px;
+    padding:27px 0;
+    margin:0 auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+.footer-service li{
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:242.734px;
+    height:25px;
+    border-right:1px solid #e0e0e0;
+}
+.footer-service li:last-child{
+    border-right:none;
+}
+.footer-service li a:hover i,
+.footer-service li a:hover span{
+    color:#ff6700;
+}
+/*设置小图标*/
+.footer-service i{
+    margin-right:3px;
+    font-size: 22px;
+    color:#616161;
+}
+/*设置字体*/
+.footer-service span{
+    font-size: 16px;
+    color:#616161;
+}
+/*网页底部样式：链接信息区*/
+.footer-links{
+    width:1226px;
+    height:312.5px;
+    padding:40px 0;
+    margin:0 auto;
+}
+/*每个列表样式*/
+.footer-links .list1{
+    float: left;
+    width:160px;
+    height:312.5px;
+    padding-left:160px;
+}
+.footer-links .list2{
+    float: left;
+    width:160px;
+    height:256.5px;
+}
+.footer-links .list3{
+    float: left;
+    width:160px;
+    height:116.5px;
+}
+.footer-links .list4{
+    float: left;
+    width:160px;
+    height:172.5px;
+}
+.footer-links .list5{
+    float: left;
+    width:160px;
+    height:144.5px;
+}
+.footer-links .list6{
+    float: left;
+    width:251px;
+    height:80px;
+    border-left:1px solid #e0e0e0;
+}
+/*列表的标题样式*/
+.footer-links ul .first{
+    font-size: 14px;
+    color: #424242;
+    width:160px;
+    height:17.5px;
+    margin-top:-1px;
+    margin-bottom:26px;
+}
+/*列表的列表项样式*/
+.footer-links ul li:not(.first){
+    font-size: 12px;
+    color:#757575;
+    width:160px;
+    height:18px;
+    margin-top:10px;
+}
+.footer-links .list6 .number{
+    font-size:22px ;
+    color:#ff6700;
+    width:251px;
+    height:22px;
+    display: flex;
+    justify-content: center;
+    margin-bottom:5px;
+}
+.footer-links .list6 .money{
+    width:251px;
+    height:18px;
+    display: flex;
+    justify-content: center;
+    margin-bottom:5px;
+}
+.footer-links .list6 .message{
+    font-size: 12px;
+    box-sizing: border-box;
+    width:118px;
+    height:28px;
+    border:1px solid #ff6700;
+    color: #ff6700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:66.5px;
+}
+.footer-links .list6 .message i{
+    font-size: 12px;
+}
+.footer-links ul a:hover{
+    color:#ff6700;
+}
+.footer-links .list6 .message:hover{
+    background-color: #ff6700;
+}
+.footer-links .list6 .message:hover i,
+.footer-links .list6 .message:hover i+span{
+    color:#fff;
+}
+/*网页其他信息*/
+.site-info{
+    box-sizing: border-box;
+    width:1903px;
+    height:266px;
+    padding:30px 0;
+    background-color: #FAFAFA;
+}
+/*网页其他信息：上半部分*/
+.info-up{
+    margin:0 auto;
+    width:1226px;
+    height:110px;
+}
+.info-up a:hover{
+    color:#ff6700;
+}
+/*logo样式*/
+.mi-logo{
+    float: left;
+    width:56px;
+    height:110px;
+    margin-right:20px;
+}
+.mi-logo img{
+    width:56px;
+    height:56px;
+}
+/*logo右边的字体样式*/
+.site-nav1,
+.site-nav2{
+    width:1149px;
+    height:19px;
+    color:#757575;
+    font-size: 12px;
+}
+.site-nav1 .line,
+.site-nav2 .line{
+    color:#B0B0B0;
+}
+/*其他信息*/
+.other-info{
+    color:#B0B0B0;
+    font-size: 12px;
+}
+/*网页其他信息：下半部分*/
+.info-down{
+    box-sizing: border-box;
+    width:1226px;
+    height:28px;
+    padding-left:77px;
+    margin:0 auto;
+    margin-top:4px;
+    margin-bottom:15px;
+}
+/*设置图片格式*/
+.info-down .img1{
+    width:83.02px;
+    height:28px;
+}
+.info-down .img2{
+    width:85px;
+    height:28px;
+}
+.info-down .img3{
+    width:91.83px;
+    height:28px;
+}
+.info-down .img4,
+.info-down .img5{
+    width:73.91px;
+    height:28px;
+}
+/*图片自动切换(最后2张图片自动切换动画未完成*/
