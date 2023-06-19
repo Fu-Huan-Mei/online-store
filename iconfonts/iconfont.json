@@ -1,0 +1,58 @@
+{
+  "id": "3938315",
+  "name": "Xiaomi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1240787",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "90513",
+      "name": "15天无理由退货",
+      "font_class": "15tianwuliyoutuihuo",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "658000",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "838048",
+      "name": "7天无理由退货",
+      "font_class": "7tianwuliyoutuihuo",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "6129342",
+      "name": "296维修-线性",
+      "font_class": "weixiu-xianxing",
+      "unicode": "e7f1",
+      "unicode_decimal": 59377
+    },
+    {
+      "icon_id": "8692387",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "15838428",
+      "name": "arrow-right-circle",
+      "font_class": "arrow-right-circle",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    }
+  ]
+}
