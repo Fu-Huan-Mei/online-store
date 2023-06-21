@@ -40,37 +40,19 @@
 
 ``` lua
 
-CSS -- 根目录的静态文件
-├── base.css -- 网站图标文件
-├── index.css -- 整个 Vue.js 应用程序的 HTML 模板
-FontAwesome -- Vue.js应用程序的源代码
-├── css -- 应用程序的根组件，定义了应用程序的整体结构和行为
-├── webfonts -- 应用程序的入口点，负责初始化 Vue 实例并将其挂载到 DOM 上
-  -- 所有与后端 API 进行通信的代码
-├── assets -- 静态资源，例如图像、字体和样式表
-├── components -- 通用组件封装
-├── router -- vue-router路由配置
-├── store -- vuex的状态管理
-└── views -- 前端页面
-    ├── address -- 地址管理
-    ├── addressEdit -- 地址编辑/新增
-    ├── createOrder -- 生成订单
-    ├── store -- 店铺
-    ├── userinfoedit -- 用户信息
-    ├── register-- 注册 
-    ├── login-- 登录
-    ├── home -- 首页
-    ├── cart -- 购物车
-    ├── order -- 订单
-    └── my -- 我的
-.env.development -- 开发环境的环境变量
-.env.production -- 生产环境的环境变量
-.gitignore -- Git控制系统忽略的文件和目录列表
-package-lock.json -- 自动生成的，用于确保每个开发人员在安装依赖时使用相同的版本
-package.json -- 应用程序所需的所有依赖项和脚本
-babel.config.js -- 配置 Babel 的转换规则，以便将 ES6+ 代码转换为 ES5 兼容的代码
-vue.config.js -- 配置打包路径、代理设置和插件配置等选项
-yarn.lock -- 记录了项目所依赖的各种 JavaScript 包及其版本号，以便在不同环境下安装和使用相同版本的依赖
+CSS -- 
+├── base.css -- 
+├── index.css -- 
+FontAwesome -- 
+├── css -- 
+├── webfonts -- 
+CssStyle -- 
+├── normalize.css -- 
+├── reset.css -- 
+iconfonts -- 
+picture -- 
+index.html
+
 ```
 
 
