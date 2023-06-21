@@ -40,18 +40,18 @@
 
 ``` lua
 
-CSS -- 
-├── base.css -- 
-├── index.css -- 
-FontAwesome -- 
-├── css -- 
-├── webfonts -- 
-CssStyle -- 
-├── normalize.css -- 
-├── reset.css -- 
-iconfonts -- 
-picture -- 
-index.html
+CSS -- 样式
+    ├── base.css -- 网站基本的样式设置，如页面布局、字体、颜色等
+    └── index.css -- 网站首页的样式设置，如轮播图、商品分类、热门商品展示等
+FontAwesome -- 图标库
+    ├── css -- 控制FontAwesome图标库的CSS文件
+    └── webfonts -- 展示FontAwesome图标的字体文件
+CssStyle -- 其他常用的样式控制
+    ├── normalize.css -- 解决不同浏览器之间的兼容性问题
+    └── reset.css -- 重置浏览器默认样式
+iconfonts -- 自定义图标字体
+picture -- 网站所需的图片文件夹
+index.html -- 网站的首页HTML文件，用于展示网站内容和样式
 
 ```
 
